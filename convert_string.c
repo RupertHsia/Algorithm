@@ -3,12 +3,12 @@
 char * convert_string(char * str, size_t len)
 {
 	char * start	= str;
-	char * end		= str + len -1;
+	char * end	= str + len -1;
 	char ch;
 
 	if(str != NULL){
 		while(start < end){
-			ch			= *start;
+			ch		= *start;
 			*start++	= *end;
 			*end-- 		=  ch;
 		}
